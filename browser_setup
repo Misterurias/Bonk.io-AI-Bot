@@ -1,0 +1,87 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+import random
+
+# Initialize WebDriver (example with Chrome)
+driver = webdriver.Chrome()
+
+# Open Bonk.io
+driver.get("https://bonk.io/")
+
+# Add a countdown timer for the page load delay
+delay = 60  # Delay in seconds
+for remaining in range(delay, 0, -1):
+    print(f"Waiting for {remaining} seconds...", end="\r")
+    time.sleep(1)
+print("Page should be loaded now!")
+
+# Interact with the game elements, e.g., login or start a game
+actions = webdriver.ActionChains(driver)
+actions.send_keys(Keys.RETURN).perform()  # Example action: Press Enter key
+
+# # Example bot movements
+# def move_up():
+#     actions.key_down(Keys.UP).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.UP).perform()
+
+# def move_down():
+#     actions.key_down(Keys.DOWN).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.DOWN).perform()
+
+# def move_left():
+#     actions.key_down(Keys.LEFT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.LEFT).perform()
+
+# def move_right():
+#     actions.key_down(Keys.RIGHT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.RIGHT).perform()
+
+# def move_up_right():
+#     actions.key_down(Keys.UP).key_down(Keys.RIGHT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.UP).key_up(Keys.RIGHT).perform()
+
+# def move_up_left():
+#     actions.key_down(Keys.UP).key_down(Keys.LEFT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.UP).key_up(Keys.LEFT).perform()
+
+# def move_down_right():
+#     actions.key_down(Keys.DOWN).key_down(Keys.RIGHT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.DOWN).key_up(Keys.RIGHT).perform()
+
+# def move_down_left():
+#     actions.key_down(Keys.DOWN).key_down(Keys.LEFT).perform()
+#     time.sleep(0.1)
+#     actions.key_up(Keys.DOWN).key_up(Keys.LEFT).perform()
+
+# def random_move():
+#     moves = [
+#         move_up,
+#         move_down,
+#         move_left,
+#         move_right,
+#         move_up_right,
+#         move_up_left,
+#         move_down_right,
+#         move_down_left
+#     ]
+#     move = random.choice(moves)
+#     move()
+
+# # Simulate the player moving around for a period of time
+# try:
+#     for _ in range(50):  # Number of moves to perform
+#         random_move()
+#         time.sleep(1)  # Wait between movements
+# finally:
+#     # Keep the browser open after movements
+#     print("Bot movements done. Keeping the browser open for inspection.")
+#     input("Press Enter to close the browser...")  # Wait for user input to close the browser
+#     driver.quit()
