@@ -1,52 +1,51 @@
-import psutil
+import cv2
 import numpy as np
-from Quartz.CoreGraphics import (
-    CGWindowListCopyWindowInfo, kCGWindowListOptionAll, kCGNullWindowID, 
-    CGWindowListCreateImage, kCGWindowImageDefault, CGRectNull,
-    kCGWindowListOptionIncludingWindow
-)
-import Quartz.ImageIO as CGImage
+import win32gui, win32ui, win32con, win32api
 
-# Function to get all Chrome processes
-def get_chrome_processes():
-    chrome_processes = []
-    for proc in psutil.process_iter(['pid', 'name']):
-        if 'chrome' in proc.info['name'].lower():
-            chrome_processes.append(proc.info)
-    return chrome_processes
 
-# Function to select the correct Chrome process
-def select_chrome_process():
-    chrome_processes = get_chrome_processes()
-    # print("List of Chrome processes:")
-    # for index, proc in enumerate(chrome_processes):
-    #     print(f"{index}: PID={proc['pid']}, Name={proc['name']}")
-    # Select the last Google Chrome process
-    for proc in reversed(chrome_processes):
-        if proc['name'] == 'Google Chrome':
-            return proc['pid']
-    return None
+def getWindowHandle(window_name):
+    hwnd = None
+    def winEnumHandler(hwnd_enum, window_name_enum):
+        if win32gui.IsWindowVisible(hwnd_enum) and window_name_enum in win32gui.GetWindowText(hwnd_enum):
+            nonlocal hwnd
+            hwnd = hwnd_enum
+    win32gui.EnumWindows(winEnumHandler, window_name)
+    if hwnd is None:
+        raise Exception(f'Window not found: {window_name}')
+    return hwnd
 
-# Function to get the window ID of the Chrome process
-def get_window_id(pid):
-    window_list = CGWindowListCopyWindowInfo(kCGWindowListOptionAll, kCGNullWindowID)
-    for window in window_list:
-        if window['kCGWindowOwnerPID'] == pid and 'kCGWindowName' in window and window['kCGWindowName']:
-            return window['kCGWindowNumber']
-    return None
+def bringWindowToFront(hwnd):
+    win32gui.SetForegroundWindow(hwnd)
+    win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)  # Ensure the window is not minimized
 
-# Function to capture the screen of the specified window
-def capture_window(window_id):
-    image = CGWindowListCreateImage(CGRectNull, kCGWindowListOptionIncludingWindow, window_id, kCGWindowImageDefault)
-    if image is None:
-        print("Unable to capture window image")
-        return None
-    width = CGImage.CGImageGetWidth(image)
-    height = CGImage.CGImageGetHeight(image)
-    data = CGImage.CGDataProviderCopyData(CGImage.CGImageGetDataProvider(image))
-    buffer = np.frombuffer(data, dtype=np.uint8)
-    if buffer.size != width * height * 4:
-        print(f"Buffer size does not match the expected size: {buffer.size} != {width * height * 4}")
-        return None
-    buffer = buffer.reshape((height, width, 4))
-    return buffer
+def grabScreen(region=None):
+    hwin = win32gui.GetDesktopWindow()
+
+    if region:
+        left, top, x2, y2 = region
+        width = x2 - left + 1
+        height = y2 - top + 1
+    else:
+        width = win32api.GetSystemMetrics(win32con.SM_CXVIRTUALSCREEN)
+        height = win32api.GetSystemMetrics(win32con.SM_CYVIRTUALSCREEN)
+        left = win32api.GetSystemMetrics(win32con.SM_XVIRTUALSCREEN)
+        top = win32api.GetSystemMetrics(win32con.SM_YVIRTUALSCREEN)
+
+    hwindc = win32gui.GetWindowDC(hwin)
+    srcdc = win32ui.CreateDCFromHandle(hwindc)
+    memdc = srcdc.CreateCompatibleDC()
+    bmp = win32ui.CreateBitmap()
+    bmp.CreateCompatibleBitmap(srcdc, width, height)
+    memdc.SelectObject(bmp)
+    memdc.BitBlt((0, 0), (width, height), srcdc, (left, top), win32con.SRCCOPY)
+
+    signedIntsArray = bmp.GetBitmapBits(True)
+    img = np.frombuffer(signedIntsArray, dtype='uint8')
+    img.shape = (height, width, 4)
+
+    srcdc.DeleteDC()
+    memdc.DeleteDC()
+    win32gui.ReleaseDC(hwin, hwindc)
+    win32gui.DeleteObject(bmp.GetHandle())
+
+    return cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)

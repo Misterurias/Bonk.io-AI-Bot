@@ -35,11 +35,11 @@ def find_player_position(prev_gray, current_frame):
 
     # Apply frame differencing
     frame_diff = cv2.absdiff(prev_gray, gray_frame)
-    cv2.imshow("Frame Difference", frame_diff)  # Display the frame difference for debugging
+    # cv2.imshow("Frame Difference", frame_diff)  # Display the frame difference for debugging
 
     # Apply Canny edge detection
     edges = cv2.Canny(frame_diff, 50, 150)
-    cv2.imshow("Edges", edges)  # Display the edges for debugging
+    # cv2.imshow("Edges", edges)  # Display the edges for debugging
 
     # Apply morphological operations to clean up the edges
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
