@@ -41,9 +41,38 @@
 
 # main.py
 
+# import cv2
+# from screen_capture import grabScreen, getWindowHandle, bringWindowToFront
+# from new_object_detection import detect_players
+
+# # Get the window handle for the bonk.io window
+# window_name = 'bonk.io - Official Site: Play Bonk Here! - Google Chrome'
+# hwnd = getWindowHandle(window_name)
+# bringWindowToFront(hwnd)  # Bring the bonk.io window to the front
+
+# region = (245, 215, 880, 640)
+
+# # Capture frames continuously and process them
+# try:
+#     while True:
+#         frame = grabScreen(region=region)  # Capture the whole screen
+#         if frame is not None:
+#             processed_frame = detect_players(frame)  # Process the frame to detect players
+#             processed_frame = cv2.cvtColor(processed_frame, cv2.COLOR_RGB2BGR)
+#             cv2.imshow('Live Player Detection', processed_frame)  # Display the processed frame
+            
+#             if cv2.waitKey(1) & 0xFF == ord('q'):  # Allow exiting the loop with 'q'
+#                 break
+# finally:
+#     cv2.destroyAllWindows()  # Close all OpenCV windows
+
 import cv2
 from screen_capture import grabScreen, getWindowHandle, bringWindowToFront
-from new_object_detection import detect_players
+from new_object_detection import detect_players, get_ppm_from_file, get_map_color_from_file, get_player_colors_from_file
+
+# Define the path to the JSON file
+mapDataFile = r'C:\Users\user\OneDrive\Desktop\Projects\Bonkio\Bonk.io-AI-Bot\bonkbot\map_data.json'
+playerDataFile = r'C:\Users\user\OneDrive\Desktop\Projects\Bonkio\Bonk.io-AI-Bot\bonkbot\player_data.json'
 
 # Get the window handle for the bonk.io window
 window_name = 'bonk.io - Official Site: Play Bonk Here! - Google Chrome'
@@ -55,9 +84,19 @@ region = (245, 215, 880, 640)
 # Capture frames continuously and process them
 try:
     while True:
-        frame = grabScreen(region=region)  # Capture the whole screen
+        # Load the map data from JSON file to get the ppm value
+        ppm = get_ppm_from_file(mapDataFile)
+        mapColor = get_map_color_from_file(mapDataFile)
+        playerColors = get_player_colors_from_file(playerDataFile)
+        print("PPM: ", ppm)
+
+        if ppm is None:
+            print("ppm value not found in map data.")
+            continue
+
+        frame = grabScreen(region=region)  # Capture the specific region of the screen
         if frame is not None:
-            processed_frame = detect_players(frame)  # Process the frame to detect players
+            processed_frame = detect_players(frame, ppm)  # Process the frame to detect players
             processed_frame = cv2.cvtColor(processed_frame, cv2.COLOR_RGB2BGR)
             cv2.imshow('Live Player Detection', processed_frame)  # Display the processed frame
             
