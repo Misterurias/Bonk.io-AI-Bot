@@ -2,7 +2,7 @@
   "v": 15,
   "s": {
     "re": false,
-    "nc": false,
+    "nc": true,
     "pq": 1,
     "gd": 25,
     "fl": false
@@ -11,8 +11,30 @@
     "shapes": [
       {
         "type": "bx",
-        "w": 350,
-        "h": 25,
+        "w": 9999,
+        "h": 10,
+        "c": [
+          0,
+          -490
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
+        "c": [
+          -120,
+          20
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 9999,
+        "h": 10,
         "c": [
           0,
           0
@@ -22,8 +44,129 @@
       },
       {
         "type": "bx",
-        "w": 750,
-        "h": 500,
+        "w": 9999,
+        "h": 10,
+        "c": [
+          440,
+          0
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 9999,
+        "h": 10,
+        "c": [
+          -280,
+          0
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 40,
+        "h": 10,
+        "c": [
+          -100,
+          55
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 20,
+        "h": 1,
+        "c": [
+          -260,
+          45
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 40,
+        "h": 10,
+        "c": [
+          -285,
+          -100
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
+        "c": [
+          -265,
+          -110
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 50,
+        "h": 10,
+        "c": [
+          410,
+          5
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 20,
+        "h": 10,
+        "c": [
+          385,
+          0
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 50,
+        "h": 10,
+        "c": [
+          -210,
+          -300
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 15,
+        "h": 10,
+        "c": [
+          -190,
+          -310
+        ],
+        "a": 1.5707963267948966,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
+        "c": [
+          0,
+          -70
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
         "c": [
           0,
           -100
@@ -33,189 +176,101 @@
       },
       {
         "type": "bx",
-        "w": 125,
-        "h": 20,
-        "c": [
-          0,
-          0
-        ],
-        "a": -1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 36,
-        "h": 20,
-        "c": [
-          -12,
-          -50
-        ],
-        "a": -0.7853981633974483,
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          0,
-          -61
-        ],
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 50,
-        "h": 20,
-        "c": [
-          0,
-          62
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
+        "w": 10,
+        "h": 10,
         "c": [
           25,
-          62
-        ],
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          234,
-          62
-        ],
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 115,
-        "h": 20,
-        "c": [
-          100,
-          0
-        ],
-        "a": 1.1902899496825317,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 115,
-        "h": 20,
-        "c": [
-          150,
-          0
-        ],
-        "a": -1.1902899496825317,
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 13,
-        "c": [
-          125,
-          54
-        ],
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          79,
-          -52
-        ],
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          171,
-          -52
-        ],
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          -24,
-          -38
-        ],
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 125,
-        "h": 20,
-        "c": [
-          260,
-          0
-        ],
-        "a": -1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 36,
-        "h": 20,
-        "c": [
-          250,
-          -50
-        ],
-        "a": -0.7853981633974483,
-        "sk": false
-      },
-      {
-        "type": "ci",
-        "r": 10,
-        "c": [
-          260,
-          -60
-        ],
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 50,
-        "h": 20,
-        "c": [
-          260,
-          62
+          -85
         ],
         "a": 0,
         "sk": false
       },
       {
-        "type": "ci",
-        "r": 10,
+        "type": "bx",
+        "w": 10,
+        "h": 10,
         "c": [
-          285,
-          62
+          0,
+          -430
         ],
+        "a": 0,
         "sk": false
       },
       {
-        "type": "ci",
-        "r": 10,
+        "type": "bx",
+        "w": 10,
+        "h": 10,
         "c": [
-          -25,
-          62
+          200,
+          -410
         ],
+        "a": 0,
         "sk": false
       },
       {
-        "type": "ci",
-        "r": 10,
+        "type": "bx",
+        "w": 10,
+        "h": 10,
         "c": [
-          238,
-          -38
+          -20,
+          -410
         ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 10,
+        "h": 10,
+        "c": [
+          180,
+          -430
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 20,
+        "h": 1,
+        "c": [
+          300,
+          45
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 20,
+        "h": 1,
+        "c": [
+          -50,
+          45
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
+        "c": [
+          180,
+          20
+        ],
+        "a": 0,
+        "sk": false
+      },
+      {
+        "type": "bx",
+        "w": 30,
+        "h": 10,
+        "c": [
+          155,
+          50
+        ],
+        "a": 1.5707963267948966,
         "sk": false
       }
     ],
@@ -227,7 +282,7 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 12237498,
+        "f": 8355711,
         "d": false,
         "np": false,
         "ng": false,
@@ -240,9 +295,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 8289918,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -253,9 +308,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -266,9 +321,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -279,9 +334,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -292,9 +347,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -303,11 +358,11 @@
         "n": "Unnamed Shape",
         "fr": null,
         "fp": null,
-        "re": null,
+        "re": 2,
         "de": null,
-        "f": 197379,
+        "f": 14934094,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -318,9 +373,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -331,9 +386,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -344,9 +399,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -357,9 +412,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -370,9 +425,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -383,9 +438,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -396,9 +451,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -409,9 +464,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -422,9 +477,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -435,9 +490,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -448,9 +503,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -461,9 +516,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -474,9 +529,9 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
         "ng": false,
         "ig": false
       },
@@ -485,11 +540,50 @@
         "n": "Unnamed Shape",
         "fr": null,
         "fp": null,
+        "re": 2,
+        "de": null,
+        "f": 14934094,
+        "d": false,
+        "np": false,
+        "ng": false,
+        "ig": false
+      },
+      {
+        "sh": 21,
+        "n": "Unnamed Shape",
+        "fr": null,
+        "fp": null,
+        "re": 2,
+        "de": null,
+        "f": 14934094,
+        "d": false,
+        "np": false,
+        "ng": false,
+        "ig": false
+      },
+      {
+        "sh": 22,
+        "n": "Unnamed Shape",
+        "fr": null,
+        "fp": null,
         "re": null,
         "de": null,
-        "f": 197379,
+        "f": 8355711,
         "d": false,
-        "np": true,
+        "np": false,
+        "ng": false,
+        "ig": false
+      },
+      {
+        "sh": 23,
+        "n": "Unnamed Shape",
+        "fr": null,
+        "fp": null,
+        "re": null,
+        "de": null,
+        "f": 8355711,
+        "d": false,
+        "np": false,
         "ng": false,
         "ig": false
       }
@@ -497,10 +591,60 @@
     "bodies": [
       {
         "type": "s",
-        "n": "UndefinedSmile. ",
+        "n": "Unnamed",
         "p": [
+          -80,
+          245
+        ],
+        "a": 0,
+        "fric": 0.5,
+        "fricp": false,
+        "re": -1,
+        "de": 0.3,
+        "lv": [
           0,
-          100
+          0
+        ],
+        "av": 0,
+        "ld": 0,
+        "ad": 0,
+        "fr": false,
+        "bu": false,
+        "cf": {
+          "x": 0,
+          "y": 0,
+          "w": true,
+          "ct": 0
+        },
+        "fx": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "f_c": 1,
+        "f_p": true,
+        "f_1": true,
+        "f_2": true,
+        "f_3": true,
+        "f_4": true,
+        "fz": {
+          "on": false,
+          "x": 0,
+          "y": 0,
+          "d": true,
+          "p": true,
+          "a": true,
+          "t": 0,
+          "cf": 0
+        }
+      },
+      {
+        "type": "s",
+        "n": "Unnamed",
+        "p": [
+          -60,
+          195
         ],
         "a": 0,
         "fric": 0.5,
@@ -524,56 +668,6 @@
         },
         "fx": [
           1,
-          0
-        ],
-        "f_c": 1,
-        "f_p": true,
-        "f_1": false,
-        "f_2": false,
-        "f_3": false,
-        "f_4": false,
-        "fz": {
-          "on": false,
-          "x": 0,
-          "y": 0,
-          "d": true,
-          "p": true,
-          "a": true,
-          "t": 0,
-          "cf": 0
-        }
-      },
-      {
-        "type": "s",
-        "n": "This Map was made for ",
-        "p": [
-          -130,
-          -62
-        ],
-        "a": 0,
-        "fric": 0.5,
-        "fricp": false,
-        "re": 0.8,
-        "de": 0.3,
-        "lv": [
-          0,
-          0
-        ],
-        "av": 0,
-        "ld": 0,
-        "ad": 0,
-        "fr": false,
-        "bu": false,
-        "cf": {
-          "x": 0,
-          "y": 0,
-          "w": true,
-          "ct": 0
-        },
-        "fx": [
-          2,
-          3,
-          4,
           5,
           6,
           7,
@@ -589,98 +683,11 @@
           17,
           18,
           19,
-          20
+          20,
+          21,
+          22,
+          23
         ],
-        "f_c": 1,
-        "f_p": true,
-        "f_1": true,
-        "f_2": true,
-        "f_3": true,
-        "f_4": true,
-        "fz": {
-          "on": false,
-          "x": 0,
-          "y": 0,
-          "d": true,
-          "p": true,
-          "a": true,
-          "t": 0,
-          "cf": 0
-        }
-      },
-      {
-        "type": "s",
-        "n": "thx to wesleygames2007",
-        "p": [
-          292,
-          -158
-        ],
-        "a": 0,
-        "fric": 0.5,
-        "fricp": false,
-        "re": 0.8,
-        "de": 0.3,
-        "lv": [
-          0,
-          0
-        ],
-        "av": 0,
-        "ld": 0,
-        "ad": 0,
-        "fr": false,
-        "bu": false,
-        "cf": {
-          "x": 0,
-          "y": 0,
-          "w": true,
-          "ct": 0
-        },
-        "fx": [],
-        "f_c": 1,
-        "f_p": true,
-        "f_1": true,
-        "f_2": true,
-        "f_3": true,
-        "f_4": true,
-        "fz": {
-          "on": false,
-          "x": 0,
-          "y": 0,
-          "d": true,
-          "p": true,
-          "a": true,
-          "t": 0,
-          "cf": 0
-        }
-      },
-      {
-        "type": "s",
-        "n": "this thing up here",
-        "p": [
-          -200,
-          -175
-        ],
-        "a": 0,
-        "fric": 0.5,
-        "fricp": false,
-        "re": 0.8,
-        "de": 0.3,
-        "lv": [
-          0,
-          0
-        ],
-        "av": 0,
-        "ld": 0,
-        "ad": 0,
-        "fr": false,
-        "bu": false,
-        "cf": {
-          "x": 0,
-          "y": 0,
-          "w": true,
-          "ct": 0
-        },
-        "fx": [],
         "f_c": 1,
         "f_p": true,
         "f_1": true,
@@ -700,22 +707,46 @@
       }
     ],
     "bro": [
-      3,
-      2,
       1,
       0
     ],
     "joints": [],
-    "ppm": 12
+    "ppm": 8
   },
   "spawns": [
     {
-      "x": -130,
-      "y": 75,
+      "x": -175,
+      "y": 230,
       "xv": 0,
       "yv": 0,
       "priority": 5,
       "r": true,
+      "f": true,
+      "b": false,
+      "gr": false,
+      "ye": false,
+      "n": "Spawn"
+    },
+    {
+      "x": -75,
+      "y": -230,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": true,
+      "f": true,
+      "b": false,
+      "gr": false,
+      "ye": false,
+      "n": "Spawn"
+    },
+    {
+      "x": 135,
+      "y": -230,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": false,
       "f": true,
       "b": true,
       "gr": false,
@@ -723,38 +754,89 @@
       "n": "Spawn"
     },
     {
-      "x": 130,
-      "y": 75,
+      "x": 110,
+      "y": 230,
       "xv": 0,
       "yv": 0,
       "priority": 5,
-      "r": true,
+      "r": false,
       "f": true,
       "b": true,
       "gr": false,
       "ye": false,
       "n": "Spawn"
+    },
+    {
+      "x": 340,
+      "y": 185,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": false,
+      "f": true,
+      "b": false,
+      "gr": true,
+      "ye": false,
+      "n": "Spawn"
+    },
+    {
+      "x": -265,
+      "y": -120,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": false,
+      "f": true,
+      "b": false,
+      "gr": true,
+      "ye": false,
+      "n": "Spawn"
+    },
+    {
+      "x": -340,
+      "y": 80,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": false,
+      "f": true,
+      "b": false,
+      "gr": false,
+      "ye": true,
+      "n": "Spawn"
+    },
+    {
+      "x": -50,
+      "y": 110,
+      "xv": 0,
+      "yv": 0,
+      "priority": 5,
+      "r": false,
+      "f": true,
+      "b": false,
+      "gr": false,
+      "ye": true,
+      "n": "Spawn"
     }
   ],
   "capZones": [],
   "m": {
-    "a": "UndEfinedSmile",
-    "n": "A Classic 1v1",
+    "a": "not   pro",
+    "n": "Snipers' Spot",
     "dbv": 2,
-    "dbid": 109705,
+    "dbid": 17790,
     "authid": -1,
     "date": "",
-    "rxid": 109705,
-    "rxn": "A Classic 1v1",
-    "rxa": "UndEfinedSmile",
-    "rxdb": 2,
+    "rxid": 0,
+    "rxn": "",
+    "rxa": "",
+    "rxdb": 1,
     "cr": [
-      "UndEfinedSmile",
-      "wesleygames2007"
+      "not   pro"
     ],
     "pub": false,
-    "mo": "b",
-    "vu": 5291,
-    "vd": 928
+    "mo": "",
+    "vu": 264884,
+    "vd": 40793
   }
 }

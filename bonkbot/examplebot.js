@@ -227,7 +227,9 @@
 // }
 
 // examplebot.js
-const BonkBot = require("bonkbot");
+// const BonkBot = require("bonkbot");
+const BonkBot = require('./bonkbot.js');
+
 const { decodeFromDatabase } = require('./decoder');
 const OpenAI = require("openai");
 const readline = require('readline');

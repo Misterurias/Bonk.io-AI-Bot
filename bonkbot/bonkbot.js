@@ -478,25 +478,59 @@ const createBot = function(options) {
                 console.log(error);
             });
         },
-        getAddressFromLink: async function(link){
-            // make an http request to the link and pull out the room address from the html
-            return new Promise((resolve, reject) => {
-                axios.get(link)
-                .then(function (response) {
-                    let gameInfo = response.data.match(/autoJoin = {"address":"(.*?)","roomname":"(.*?)","server":"(.*?)","passbypass":"(.*?)","r":"success"}/);
-                    gameInfo = {
-                        address: gameInfo[1],
-                        roomname: gameInfo[2],
-                        server: gameInfo[3],
-                        passbypass: gameInfo[4]
-                    }
-                    // console.log("Game Info:", gameInfo);
-                    resolve(gameInfo)
-                });
-            }).catch(function (error) {
-                console.log(error);
-            });
+        // getAddressFromLink: async function(link){
+        //     // make an http request to the link and pull out the room address from the html
+        //     return new Promise((resolve, reject) => {
+        //         axios.get(link)
+        //         .then(function (response) {
+        //             console.log(response)
+        //             let gameInfo = response.data.match(/autoJoin = {"address":"(.*?)","roomname":"(.*?)","server":"(.*?)","passbypass":"(.*?)","r":"success"}/);
+        //             gameInfo = {
+        //                 address: gameInfo[1],
+        //                 roomname: gameInfo[2],
+        //                 server: gameInfo[3],
+        //                 passbypass: gameInfo[4]
+        //             }
+        //             // console.log("Game Info:", gameInfo);
+        //             resolve(gameInfo)
+        //         });
+        //     }).catch(function (error) {
+        //         console.log(error);
+        //     });
+        // },
+
+        getAddressFromLink: async function (link) {
+            const match = link.match(/\/(\d{6})([a-zA-Z0-9]{5})?$/);
+            if (!match) {
+                throw new Error("Invalid link format");
+            }
+        
+            const [_, joinID, bypass] = match;
+        
+            try {
+                const response = await axios.post(
+                    'https://bonk2.io/scripts/autojoin.php',
+                    new URLSearchParams({ joinID }).toString(),
+                    { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }
+                );
+        
+                if (response.data.r !== "success") {
+                    throw new Error("Failed to fetch autoJoin data");
+                }
+        
+                const gameInfo = {
+                    ...response.data,
+                    passbypass: bypass || ""
+                };
+        
+                console.log("Game Info:", gameInfo);
+                return gameInfo;
+            } catch (error) {
+                console.error("Error fetching autoJoin data:", error);
+                throw error;
+            }
         },
+
         getToken: async function(){
             var url = "https://bonk2.io/scripts/login_legacy.php";
             return new Promise((resolve, reject) => {
@@ -521,7 +555,7 @@ const createBot = function(options) {
             if(options.basecolor == undefined){options.basecolor = 16448250}
             if(options.skin == undefined){options.skin = `{"id":30,"scale":0.30000001192092896,"angle":0,"x":0,"y":0,"flipX":false,"flipY":false,"color":0},{"id":75,"scale":0.07894168794155121,"angle":231.9313201904297,"x":-9.684389114379883,"y":2.921388626098633,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.08011436462402344,"angle":246.96766662597656,"x":-7.4090142250061035,"y":6.844449520111084,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.08011436462402344,"angle":-69.44682312011719,"x":7.4201555252075195,"y":6.805218696594238,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.08325429260730743,"angle":-53.76435089111328,"x":9.440908432006836,"y":3.1005043983459473,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.08254065364599228,"angle":7.713021755218506,"x":-1.975311517715454,"y":-9.978830337524414,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.08310862630605698,"angle":-6.316278457641602,"x":2.2820658683776855,"y":-9.94627857208252,"flipX":false,"flipY":false,"color":16777215},{"id":13,"scale":0.3945557773113251,"angle":0.04141417145729065,"x":-0.0322730652987957,"y":-0.060396190732717514,"flipX":false,"flipY":false,"color":16777215},{"id":75,"scale":0.21413731575012207,"angle":419.81427001953125,"x":-2.4916510581970215,"y":1.3715696334838867,"flipX":false,"flipY":false,"color":0},{"id":75,"scale":0.21413731575012207,"angle":120.56624603271484,"x":2.608327865600586,"y":1.3715696334838867,"flipX":false,"flipY":false,"color":0},{"id":75,"scale":0.21413731575012207,"angle":0.39198538661003113,"x":0,"y":-3.107584238052368,"flipX":false,"flipY":false,"color":0},{"id":30,"scale":1.0002638101577759,"angle":-1.4328136444091797,"x":-0.04256964847445488,"y":0,"flipX":false,"flipY":false,"color":16777215},{"id":13,"scale":0.5588991045951843,"angle":-0.6648434996604919,"x":0,"y":0,"flipX":false,"flipY":false,"color":16777215},{"id":34,"scale":0.759579062461853,"angle":124.82804870605469,"x":-10.603617668151855,"y":-4.556829929351807,"flipX":false,"flipY":false,"color":0},{"id":34,"scale":0.7667332887649536,"angle":-3.340736150741577,"x":-0.7606570720672607,"y":11.768919944763184,"flipX":false,"flipY":false,"color":0},{"id":34,"scale":0.7913457751274109,"angle":241.08135986328125,"x":9.895292282104492,"y":-6.6403703689575195,"flipX":false,"flipY":false,"color":0}`}
             if(options.account.guest == true){
-                let color = color
+                let color = options.basecolor || 16777215;
                 this.socket.send(`42[13,{"joinID":"${options.address}","roomPassword":"${options.roompassword}","guest":true,"dbid":2,"version":44,"peerID":"${options.peerid}","bypass":"","guestName":"${options.account.username}","avatar":{"layers":[${options.skin}],"bc":${options.basecolor}}}]`)
             }else{
                 this.socket.send(`42[13,{"joinID":"${options.address}","roomPassword":"${options.roompassword}","guest":false,"dbid":2,"version":44,"peerID":"${options.peerid}","bypass":"","token":"${options.token}","avatar":{"layers":[${options.skin}],"bc":${options.basecolor}}}]`)
