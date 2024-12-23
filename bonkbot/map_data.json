@@ -2,7 +2,7 @@
   "v": 15,
   "s": {
     "re": false,
-    "nc": true,
+    "nc": false,
     "pq": 1,
     "gd": 25,
     "fl": false
@@ -11,266 +11,13 @@
     "shapes": [
       {
         "type": "bx",
-        "w": 9999,
-        "h": 10,
-        "c": [
-          0,
-          -490
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          -120,
-          20
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 9999,
-        "h": 10,
+        "w": 260,
+        "h": 20,
         "c": [
           0,
           0
         ],
         "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 9999,
-        "h": 10,
-        "c": [
-          440,
-          0
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 9999,
-        "h": 10,
-        "c": [
-          -280,
-          0
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 40,
-        "h": 10,
-        "c": [
-          -100,
-          55
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 20,
-        "h": 1,
-        "c": [
-          -260,
-          45
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 40,
-        "h": 10,
-        "c": [
-          -285,
-          -100
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          -265,
-          -110
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 50,
-        "h": 10,
-        "c": [
-          410,
-          5
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 20,
-        "h": 10,
-        "c": [
-          385,
-          0
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 50,
-        "h": 10,
-        "c": [
-          -210,
-          -300
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 15,
-        "h": 10,
-        "c": [
-          -190,
-          -310
-        ],
-        "a": 1.5707963267948966,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          0,
-          -70
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          0,
-          -100
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 10,
-        "h": 10,
-        "c": [
-          25,
-          -85
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 10,
-        "h": 10,
-        "c": [
-          0,
-          -430
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 10,
-        "h": 10,
-        "c": [
-          200,
-          -410
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 10,
-        "h": 10,
-        "c": [
-          -20,
-          -410
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 10,
-        "h": 10,
-        "c": [
-          180,
-          -430
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 20,
-        "h": 1,
-        "c": [
-          300,
-          45
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 20,
-        "h": 1,
-        "c": [
-          -50,
-          45
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          180,
-          20
-        ],
-        "a": 0,
-        "sk": false
-      },
-      {
-        "type": "bx",
-        "w": 30,
-        "h": 10,
-        "c": [
-          155,
-          50
-        ],
-        "a": 1.5707963267948966,
         "sk": false
       }
     ],
@@ -282,306 +29,7 @@
         "fp": null,
         "re": null,
         "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 1,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 2,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 3,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 4,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 5,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 6,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": 2,
-        "de": null,
-        "f": 14934094,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 7,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 8,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 9,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 10,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 11,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 12,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 13,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 14,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 15,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 16,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 17,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 18,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 19,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 20,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": 2,
-        "de": null,
-        "f": 14934094,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 21,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": 2,
-        "de": null,
-        "f": 14934094,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 22,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
-        "d": false,
-        "np": false,
-        "ng": false,
-        "ig": false
-      },
-      {
-        "sh": 23,
-        "n": "Unnamed Shape",
-        "fr": null,
-        "fp": null,
-        "re": null,
-        "de": null,
-        "f": 8355711,
+        "f": 8071225,
         "d": false,
         "np": false,
         "ng": false,
@@ -591,10 +39,10 @@
     "bodies": [
       {
         "type": "s",
-        "n": "Unnamed",
+        "n": "1v1 Platform",
         "p": [
-          -80,
-          245
+          0,
+          0
         ],
         "a": 0,
         "fric": 0.5,
@@ -617,76 +65,7 @@
           "ct": 0
         },
         "fx": [
-          0,
-          2,
-          3,
-          4
-        ],
-        "f_c": 1,
-        "f_p": true,
-        "f_1": true,
-        "f_2": true,
-        "f_3": true,
-        "f_4": true,
-        "fz": {
-          "on": false,
-          "x": 0,
-          "y": 0,
-          "d": true,
-          "p": true,
-          "a": true,
-          "t": 0,
-          "cf": 0
-        }
-      },
-      {
-        "type": "s",
-        "n": "Unnamed",
-        "p": [
-          -60,
-          195
-        ],
-        "a": 0,
-        "fric": 0.5,
-        "fricp": false,
-        "re": -1,
-        "de": 0.3,
-        "lv": [
-          0,
           0
-        ],
-        "av": 0,
-        "ld": 0,
-        "ad": 0,
-        "fr": false,
-        "bu": false,
-        "cf": {
-          "x": 0,
-          "y": 0,
-          "w": true,
-          "ct": 0
-        },
-        "fx": [
-          1,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          23
         ],
         "f_c": 1,
         "f_p": true,
@@ -707,46 +86,19 @@
       }
     ],
     "bro": [
-      1,
       0
     ],
     "joints": [],
-    "ppm": 8
+    "ppm": 15
   },
   "spawns": [
     {
-      "x": -175,
-      "y": 230,
+      "x": -100,
+      "y": -25,
       "xv": 0,
       "yv": 0,
       "priority": 5,
       "r": true,
-      "f": true,
-      "b": false,
-      "gr": false,
-      "ye": false,
-      "n": "Spawn"
-    },
-    {
-      "x": -75,
-      "y": -230,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": true,
-      "f": true,
-      "b": false,
-      "gr": false,
-      "ye": false,
-      "n": "Spawn"
-    },
-    {
-      "x": 135,
-      "y": -230,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": false,
       "f": true,
       "b": true,
       "gr": false,
@@ -754,77 +106,25 @@
       "n": "Spawn"
     },
     {
-      "x": 110,
-      "y": 230,
+      "x": 100,
+      "y": -25,
       "xv": 0,
       "yv": 0,
       "priority": 5,
-      "r": false,
+      "r": true,
       "f": true,
       "b": true,
       "gr": false,
       "ye": false,
-      "n": "Spawn"
-    },
-    {
-      "x": 340,
-      "y": 185,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": false,
-      "f": true,
-      "b": false,
-      "gr": true,
-      "ye": false,
-      "n": "Spawn"
-    },
-    {
-      "x": -265,
-      "y": -120,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": false,
-      "f": true,
-      "b": false,
-      "gr": true,
-      "ye": false,
-      "n": "Spawn"
-    },
-    {
-      "x": -340,
-      "y": 80,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": false,
-      "f": true,
-      "b": false,
-      "gr": false,
-      "ye": true,
-      "n": "Spawn"
-    },
-    {
-      "x": -50,
-      "y": 110,
-      "xv": 0,
-      "yv": 0,
-      "priority": 5,
-      "r": false,
-      "f": true,
-      "b": false,
-      "gr": false,
-      "ye": true,
       "n": "Spawn"
     }
   ],
   "capZones": [],
   "m": {
-    "a": "not   pro",
-    "n": "Snipers' Spot",
+    "a": "65536Colors1v1",
+    "n": "1v1 #7b2839",
     "dbv": 2,
-    "dbid": 17790,
+    "dbid": 1231189,
     "authid": -1,
     "date": "",
     "rxid": 0,
@@ -832,11 +132,11 @@
     "rxa": "",
     "rxdb": 1,
     "cr": [
-      "not   pro"
+      "GudStrat"
     ],
     "pub": false,
     "mo": "",
-    "vu": 264884,
-    "vd": 40793
+    "vu": 8,
+    "vd": 0
   }
 }

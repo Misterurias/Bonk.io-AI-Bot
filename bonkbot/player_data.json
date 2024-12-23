@@ -1,43 +1,8 @@
 [
-  {
-    "peerID": "ayp6gxd4pt000000",
-    "guest": false,
-    "team": 1,
-    "level": 115,
-    "ready": false,
-    "tabbed": true,
-    "avatar": {
-      "layers": [
-        {
-          "id": 34,
-          "scale": 0.30000001192092896,
-          "angle": -90,
-          "x": -2.142857074737549,
-          "y": -3,
-          "flipX": false,
-          "flipY": false,
-          "color": 16250871
-        },
-        {
-          "id": 34,
-          "scale": 0.30000001192092896,
-          "angle": 90,
-          "x": 3.142857074737549,
-          "y": 4.142857074737549,
-          "flipX": false,
-          "flipY": false,
-          "color": 16250871
-        }
-      ],
-      "bc": 132615
-    },
-    "id": 0,
-    "username": "The Saucy Tulip",
-    "here": true
-  },
+  null,
   null,
   {
-    "peerID": "m4cbqyn7e1v00000",
+    "peerID": "m1cx4p35jsv00000",
     "guest": true,
     "team": 1,
     "level": 0,
